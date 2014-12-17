@@ -8,8 +8,14 @@ namespace MasterData
 {
     public class StudentEntity:UserEntity
     {
-        private string Address{get; set;}
-        private string Classes { get; set; }
-        private string CourseList { get; set; }
+        public int studentId { get; set; }
+        public Nullable<int> userId { get; set; }
+        public string address { get; set; }
+        public string @class { get; set; }
+
+        public virtual ICollection<EnrolledCours> EnrolledCourses { get; set; }
+        public virtual ICollection<Result> Results { get; set; }
+        public virtual UserEntity User { get; set; }
+        public virtual ICollection<SubmitedAssignment> SubmitedAssignments { get; set; }
     }
 }

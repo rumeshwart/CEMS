@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace MasterData
 {
-    public class Faculty : UserEntity 
+    public class FeedbackEntity
     {
-        public int facultyId { get; set; }
+        public int feedbackId { get; set; }
         public int userId { get; set; }
-        public string department { get; set; }
-        public string designation { get; set; }
+        public string feedBack1 { get; set; }
+        public System.DateTime feedbackDate { get; set; }
 
         public virtual UserEntity User { get; set; }
-      
     }
 }
