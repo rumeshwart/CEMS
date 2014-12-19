@@ -8,9 +8,11 @@ namespace DataAccess
 {
     class UserDAO:CommonFunction 
     {
-        public void Insert()
+        StudentEnrollmentEntities entities = new StudentEnrollmentEntities();
+        public void Insert(Student s)
         {
-            throw new NotImplementedException();
+            entities.Students.Add(s);
+            entities.SaveChanges();
         }
 
         public void Update()

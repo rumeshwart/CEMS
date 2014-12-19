@@ -8,7 +8,7 @@ namespace DataAccess
 {
     interface CommonFunction
     {
-         void Insert();
+         void Insert(Student s);
 
          void Update();
 
