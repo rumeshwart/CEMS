@@ -8,7 +8,7 @@ namespace DataAccess
 {
     public  class DataAccess:CommonFunction 
     {
-        public void Insert()
+        public void Insert(Student s)
         {
             throw new NotImplementedException();
         }
